@@ -7,6 +7,7 @@ export default class MainPage extends Component {
     render() {
         return (
             <Grommet>
+
                 <ItemsContainer/>
 
             </Grommet>

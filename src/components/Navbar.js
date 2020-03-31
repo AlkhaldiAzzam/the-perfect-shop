@@ -1,8 +1,16 @@
 import React, { Component } from 'react'
-import {Grommet} from 'grommet'
+import {Grommet, Anchor, Box, Stack, Text} from 'grommet'
+import {Cart} from 'grommet-icons'
+
 import {Navbar, Nav, Button, Form, FormControl, NavDropdown} from 'react-bootstrap'
 
 export default class TheNavbar extends Component {
+
+
+    state={
+        cart: 0
+    }
+
     render() {
 
         
@@ -28,6 +36,17 @@ export default class TheNavbar extends Component {
         <a class="nav-link" href="#">About</a>
       </li>
     </ul>
+
+    <Anchor href='#' size='large' reverse label='Your Cart' icon={<Stack anchor="top-right">
+  <Cart size="large" />
+  <Box
+    background="brand"
+    pad={{ horizontal: 'xsmall' }}
+    round
+  >
+    <Text>{this.state.cart}</Text>
+  </Box>
+</Stack>}/>
     
   </div>
 </nav>
