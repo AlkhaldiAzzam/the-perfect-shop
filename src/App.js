@@ -198,7 +198,7 @@ removeItem(item){
           <Route path="/item/:id" render={ props => <ItemPage {...props} addItem={this.addItem} allItems={this.state.items}/>}/>
           <Route path="/thanks" component={ThankyouPage}/>
           <Route path="/login" component={()=> <Login signin={this.signin}/>}/>
-          <Route path="/signup" component={Signup}/>
+          <Route path="/signup" component={()=> <Signup signin={this.signin}/>}/>
 
         </Switch>
 
