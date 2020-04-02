@@ -10,6 +10,7 @@
     "bootswatch": "^4.4.1",
     "faker": "^4.1.0",
     "grommet": "^2.11.2",
+    "grommet-controls": "^2.0.4",
     "grommet-icons": "^4.4.0",
     "mdbreact": "^4.25.5",
     "react": "^16.13.1",

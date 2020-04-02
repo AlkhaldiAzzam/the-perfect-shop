@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Grommet,Anchor, Box, Stack, Text} from 'grommet'
+import {Grommet,Anchor, Box, Stack, Text, Button} from 'grommet'
 import MainPage from './components/MainPage.js'
 import Navbar from './components/Navbar'
 import {Route,BrowserRouter as Router, Switch, Link} from 'react-router-dom'
@@ -8,6 +8,8 @@ import CartPage from './components/CartPage'
 import ItemPage from './components/ItemPage'
 import Faker from 'faker'
 import ThankyouPage from './components/ThankyouPage.js'
+import Login from './components/authantication/Login.js'
+import Signup from './components/authantication/Signup.js'
 
 export default class App extends Component {
 
@@ -16,11 +18,14 @@ export default class App extends Component {
     super(props)
     this.state = {
       cart:[],
-      items: []
+      items: [],
+      loggedin: false,
+      navCon: <div></div>
   }
 
   this.addItem = this.addItem.bind(this)
   this.removeItem = this.removeItem.bind(this)
+  this.signin = this.signin.bind(this)
   }
 
 
@@ -38,6 +43,21 @@ componentWillMount(){
   
       })
     }
+        
+
+let content
+        if(this.state.loggedin){
+          content =  <ul className="navbar-nav">
+            
+      <li className="nav-item active">
+
+      <Link className="nav-link" to='/'><Text size='large'> Log Out</Text></Link>
+</li>      
+      
+      </ul>
+        }
+        
+
         this.setState({
           items: randItems
         })
@@ -45,11 +65,52 @@ componentWillMount(){
         
 }
 
+signin(){
+
+
+  console.log('signed inn')
+
+  this.setState({
+    loggedin: true
+  })
+}
+
+renderCon(){
+  let l
+  if(this.state.loggedin)
+    l = <ul className="navbar-nav">
+            
+    <li className="nav-item active">
+
+    <Link className="nav-link" to='/' onClick={()=> this.logout()}> <Text size='large'> Log Out</Text></Link>
+</li>      
+    
+    </ul>
+
+    else 
+        l = <ul className="navbar-nav">
+        
+  <li className="nav-item active">
+  <Link className="nav-link" to='/login'><Text color='light'> Log In</Text></Link>  
+  </li>
+  <li className="nav-item active">
+
+  <Link className="nav-link" to='/signup'><Text color='light'> Sign Up</Text></Link>  
+  </li>
+  </ul>
+
+  return l
+}
+
+logout(){
+  this.setState({
+    loggedin: false
+  })
+}
 
 addItem(item){
   let curCart = this.state.cart
 
-  // item.quantity = 3
 
   curCart.push(item)
 
@@ -82,7 +143,7 @@ removeItem(item){
       <Grommet plain>
   
         {/* <Navbar cartNum={this.state.cart.length}/> */}
-
+      <Button onClick={()=>this.signin()} lablel="login"/>
         <Router>
 
 
@@ -95,7 +156,7 @@ removeItem(item){
   <div className="collapse navbar-collapse" id="navbarColor01">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
-        <Link className="nav-link" to='/'> <Text size="large"> Home</Text> <span className="sr-only">(current)</span></Link>
+        <Link className="nav-link" to='/'> <Text size="large"> Home</Text> </Link>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">Features</a>
@@ -112,15 +173,18 @@ removeItem(item){
     </ul>
 
     <Anchor size='large' color='brand' reverse  icon={<Stack anchor="top-right">
-    <Link to='/cart'> <Cart size="large" /> </Link>
-  <Box
-    background="brand"
-    pad={{ horizontal: 'xsmall' }}
-    round
-  >
-    <Text>{this.state.cart.length}</Text>
-  </Box>
-</Stack>}/>
+          <Link to='/cart'> <Cart size="large" /> </Link>
+        <Box
+          background="brand"
+          pad={{ horizontal: 'xsmall' }}
+          round
+          >
+          <Text>{this.state.cart.length}</Text>
+        </Box>
+      </Stack>}
+      />
+      {this.renderCon()}
+    
     
   </div>
 </nav>
@@ -133,6 +197,8 @@ removeItem(item){
           <Route path='/cart' component={()=> <CartPage itemRemover={this.removeItem} cart={this.state.cart} />}/>
           <Route path="/item/:id" render={ props => <ItemPage {...props} addItem={this.addItem} allItems={this.state.items}/>}/>
           <Route path="/thanks" component={ThankyouPage}/>
+          <Route path="/login" component={()=> <Login signin={this.signin}/>}/>
+          <Route path="/signup" component={Signup}/>
 
         </Switch>
 

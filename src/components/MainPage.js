@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Grommet, Box } from 'grommet'
 import ItemsContainer from './ItemsContainer'
 import { InputGroup, FormControl, FormLabel} from 'react-bootstrap'
-
+import Login from './authantication/Login'
 
 export default class MainPage extends Component {
 
@@ -35,6 +35,7 @@ filterHandler(e){
     render() {
         return (
             <Grommet>
+                
 
 <Box margin='large' border='all'>
     <FormLabel>Filter It</FormLabel>
