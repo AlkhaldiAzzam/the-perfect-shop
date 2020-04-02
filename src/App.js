@@ -77,7 +77,6 @@ removeItem(item){
 }
 
 
-
   render() {
     return (
       <Grommet plain>
@@ -88,7 +87,7 @@ removeItem(item){
 
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a className="navbar-brand" href="#">Azzam's Shop</a>
+  <a className="navbar-brand">Azzam's Shop</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -96,7 +95,7 @@ removeItem(item){
   <div className="collapse navbar-collapse" id="navbarColor01">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
-        <Link className="nav-link" to='/'>Home <span className="sr-only">(current)</span></Link>
+        <Link className="nav-link" to='/'> <Text size="large"> Home</Text> <span className="sr-only">(current)</span></Link>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">Features</a>

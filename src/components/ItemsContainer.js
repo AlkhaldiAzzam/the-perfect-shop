@@ -31,20 +31,14 @@ export default class ItemsContainer extends Component {
 
 
         let itemsList = []
-        for (let i = 0; i < this.state.items.length;i+=3){
+        for (let i = 0; i < this.state.items.length;i++){
             
             itemsList.push(
-            <Row key={i}>
                 <Col>
                 <Item key={this.state.items[i].id} item={this.state.items[i]} clickHandler={()=> this.props.clickHandler(this.state.items[i])}/>
                 </Col>
-                <Col>
-                <Item key={this.state.items[i+1].id} item={this.state.items[i+1]} clickHandler={()=> this.props.clickHandler(this.state.items[i+1])}/>
-                </Col>
-                <Col>
-                <Item key={this.state.items[i+2].id} item={this.state.items[i+2]} clickHandler={()=> this.props.clickHandler(this.state.items[i+2])}/>
-                </Col>
-            </Row>
+              
+            
             )
             // console.log(i)
             // i+=3
@@ -60,8 +54,13 @@ export default class ItemsContainer extends Component {
 
         return (
             <Box margin='xlarge' alignContent='center' border='all'>
+                
+            <Row>
+
+
 
             {this.generateItems()}
+            </Row>
             </Box>
             
         )

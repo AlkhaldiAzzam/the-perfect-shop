@@ -15,9 +15,6 @@ export default class SearchBar extends Component {
       aria-describedby="basic-addon2"
       size='lg'
     />
-    {/* <InputGroup.Append>
-      <Button variant="outline-secondary">Search</Button>
-    </InputGroup.Append> */}
   </InputGroup>
   
             </Box>
