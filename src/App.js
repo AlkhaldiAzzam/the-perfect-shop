@@ -142,8 +142,6 @@ removeItem(item){
     return (
       <Grommet plain>
   
-        {/* <Navbar cartNum={this.state.cart.length}/> */}
-      <Button onClick={()=>this.signin()} lablel="login"/>
         <Router>
 
 
@@ -158,7 +156,7 @@ removeItem(item){
       <li className="nav-item active">
         <Link className="nav-link" to='/'> <Text size="large"> Home</Text> </Link>
       </li>
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <a className="nav-link" href="#">Features</a>
       </li>
       <li className="nav-item">
@@ -166,7 +164,7 @@ removeItem(item){
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">About</a>
-      </li>
+      </li> */}
 
      
 

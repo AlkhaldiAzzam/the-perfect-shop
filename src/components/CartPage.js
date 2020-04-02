@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import { Box, TableHeader, TableRow, TableCell, Table, TableBody, Text } from 'grommet'
+import { Box, TableHeader, TableRow, TableCell, Table, TableBody, Text,Button } from 'grommet'
 import '../css/style.css'
 import {Close} from 'grommet-icons'
 import CartItem from './CartItem'
-import { Button } from 'react-bootstrap'
-
+// import { Button } from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 export default class CartPage extends Component {
 
 
@@ -40,18 +40,15 @@ export default class CartPage extends Component {
             table = <h1> is Empty</h1>
 
             else{
-
-
-
-
-       let cart = []
+                
+                let cart = []
         stateCart.forEach((i,key) => {
             cart.push(
                 <CartItem key={key} item={i} clickHandler={() => this.props.itemRemover(i)}/>
               )
         })
 
-        table =  <Table alignSelf='center'>
+        table = <Box> <Table alignSelf='center'>
   <TableHeader>
     <TableRow>
 
@@ -81,6 +78,9 @@ export default class CartPage extends Component {
 
   </TableBody>
 </Table>
+
+<Button label='Checkout'/>
+</Box>
     }
         return table
     }
@@ -111,6 +111,11 @@ export default class CartPage extends Component {
             <Box>
             
             {this.generateCart()}
+
+
+            {/* <Box margin='large'> */}
+                <Link className='my-5' to='/'> <Button label='Back To Main Page' /> </Link>
+            {/* </Box> */}
 
             </Box>
 

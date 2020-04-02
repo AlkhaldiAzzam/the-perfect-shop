@@ -19,6 +19,12 @@ export default class ThankyouPage extends Component {
                 </div>
 
                 <Link to='/cart'>Check Out?</Link>
+
+                <Box margin='large'>
+                    <Link to='/'>Go Back</Link>
+                </Box>
+
+
             </Box>
             </div>
         )

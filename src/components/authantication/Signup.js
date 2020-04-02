@@ -13,7 +13,7 @@ export default class Signup extends Component {
 
     render() {
         return (
-            <Box align='center'>
+            <Box align='center' margin='large'>
                 <Box align='center'>
                 <Form
     basis='medium'
