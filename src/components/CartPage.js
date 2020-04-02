@@ -13,39 +13,19 @@ export default class CartPage extends Component {
     constructor(props){
         super(props)
         this.state = {
-            cart:[
-                {
-                    name: 'Pants1',
-                    price:200,
-                    quantity:2
-                },
-                {
-                    name: 'Pants2',
-                    price:200,
-                    quantity:2
-                },
-                {
-                    name: 'Pants3',
-                    price:200,
-                    quantity:2
-                },
-                {
-                    name: 'Pants4',
-                    price:200,
-                    quantity:2
-                }
-            ]
+            cart: []
         }
 
-        // this.removeItem = this.removeItem.bind(this)
-        this.updateCart = this.updateCart.bind(this)
     }
 
     
 
     componentDidMount(){
 
-        this.generateCart()
+        this.setState({
+            cart: this.props.cart
+        } ,  this.generateCart)
+       
     }
 
     generateCart(){
@@ -57,7 +37,7 @@ export default class CartPage extends Component {
         
         let table
         if(stateCart.length == 0)
-            table = <h1>Your Cart is Empty</h1>
+            table = <h1> is Empty</h1>
 
             else{
 
@@ -65,9 +45,9 @@ export default class CartPage extends Component {
 
 
        let cart = []
-        stateCart.forEach(i => {
+        stateCart.forEach((i,key) => {
             cart.push(
-                <CartItem item={i} clickHandler={()=>this.removeItem(i)}/>
+                <CartItem key={key} item={i} clickHandler={() => this.props.itemRemover(i)}/>
               )
         })
 
@@ -108,12 +88,6 @@ export default class CartPage extends Component {
     removeItem(item){
 
         
-        this.updateCart(item)
-
-        console.log(item)
-    }
-
-    updateCart(item){
         let currentCart = this.state.cart
 
         let newCart = currentCart.filter(i => {
@@ -124,6 +98,7 @@ export default class CartPage extends Component {
             cart: newCart
         })
     }
+
 
     render() {
         

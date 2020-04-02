@@ -5,13 +5,18 @@ import SearchBar from './SearchBar'
 import CartPage from './CartPage'
 
 export default class MainPage extends Component {
+
+    constructor(props){
+        super(props)
+    }
+
     render() {
         return (
             <Grommet>
-{/* 
+
                 <SearchBar/>
-                <ItemsContainer/> */}
-                <CartPage/>
+                <ItemsContainer items={this.props.items} clickHandler={this.props.clickHandler}/>
+                {/* <CartPage/> */}
 
             </Grommet>
         )

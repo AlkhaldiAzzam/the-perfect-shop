@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
     "bootswatch": "^4.4.1",
+    "faker": "^4.1.0",
     "grommet": "^2.11.2",
     "grommet-icons": "^4.4.0",
     "mdbreact": "^4.25.5",
