@@ -79,7 +79,7 @@ export default class CartPage extends Component {
   </TableBody>
 </Table>
 
-<Button label='Checkout'/>
+ <Link to='/thanks'> <Button onClick={()=>this.props.checkOut()} label='Checkout'/></Link>
 </Box>
     }
         return table

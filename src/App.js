@@ -26,6 +26,7 @@ export default class App extends Component {
   this.addItem = this.addItem.bind(this)
   this.removeItem = this.removeItem.bind(this)
   this.signin = this.signin.bind(this)
+  this.checkout = this.checkout.bind(this)
   }
 
 
@@ -121,6 +122,11 @@ addItem(item){
   console.log(this)
 }
 
+checkout(){
+  this.setState({
+    cart: []
+  })
+}
 
 
 removeItem(item){
@@ -192,7 +198,7 @@ removeItem(item){
 
         <Switch>
           <Route exact path='/' component={() => <MainPage items={this.state.items} />} />
-          <Route path='/cart' component={()=> <CartPage itemRemover={this.removeItem} cart={this.state.cart} />}/>
+          <Route path='/cart' component={()=> <CartPage checkOut={this.checkout} itemRemover={this.removeItem} cart={this.state.cart} />}/>
           <Route path="/item/:id" render={ props => <ItemPage {...props} addItem={this.addItem} allItems={this.state.items}/>}/>
           <Route path="/thanks" component={ThankyouPage}/>
           <Route path="/login" component={()=> <Login signin={this.signin}/>}/>
