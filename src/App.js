@@ -197,12 +197,12 @@ removeItem(item){
 
 
         <Switch>
-          <Route exact path="the-perfect-shop/" component={() => <MainPage items={this.state.items} />} />
-          <Route path="the-perfect-shop/cart" component={()=> <CartPage checkOut={this.checkout} itemRemover={this.removeItem} cart={this.state.cart} />}/>
-          <Route path="the-perfect-shop/item/:id" render={ props => <ItemPage {...props} addItem={this.addItem} allItems={this.state.items}/>}/>
-          <Route path="the-perfect-shop/thanks" component={ThankyouPage}/>
-          <Route path="the-perfect-shop/login" component={()=> <Login signin={this.signin}/>}/>
-          <Route path="the-perfect-shop/signup" component={()=> <Signup signin={this.signin}/>}/>
+          <Route exact path="/" component={() => <MainPage items={this.state.items} />} />
+          <Route path="/cart" component={()=> <CartPage checkOut={this.checkout} itemRemover={this.removeItem} cart={this.state.cart} />}/>
+          <Route path="/item/:id" render={ props => <ItemPage {...props} addItem={this.addItem} allItems={this.state.items}/>}/>
+          <Route path="/thanks" component={ThankyouPage}/>
+          <Route path="/login" component={()=> <Login signin={this.signin}/>}/>
+          <Route path="/signup" component={()=> <Signup signin={this.signin}/>}/>
 
         </Switch>
 
