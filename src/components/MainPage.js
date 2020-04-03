@@ -37,7 +37,8 @@ filterHandler(e){
             <Grommet>
                 
 
-<Box margin='large' border='all'>
+<Box margin='large' >
+    <h1>hiii</h1>
     <FormLabel>Filter It</FormLabel>
 
 <InputGroup sice='lg'>
