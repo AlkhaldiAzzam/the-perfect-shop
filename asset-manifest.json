@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/the-perfect-shop/static/css/main.ab3c6824.chunk.css",
-    "main.js": "/the-perfect-shop/static/js/main.9fc8de51.chunk.js",
-    "main.js.map": "/the-perfect-shop/static/js/main.9fc8de51.chunk.js.map",
+    "main.js": "/the-perfect-shop/static/js/main.8fa4d6bd.chunk.js",
+    "main.js.map": "/the-perfect-shop/static/js/main.8fa4d6bd.chunk.js.map",
     "runtime-main.js": "/the-perfect-shop/static/js/runtime-main.a66eb506.js",
     "runtime-main.js.map": "/the-perfect-shop/static/js/runtime-main.a66eb506.js.map",
     "static/css/2.ef1efacd.chunk.css": "/the-perfect-shop/static/css/2.ef1efacd.chunk.css",
     "static/js/2.7d01282f.chunk.js": "/the-perfect-shop/static/js/2.7d01282f.chunk.js",
     "static/js/2.7d01282f.chunk.js.map": "/the-perfect-shop/static/js/2.7d01282f.chunk.js.map",
     "index.html": "/the-perfect-shop/index.html",
-    "precache-manifest.e5aa56d9d2545865963809bc5075840d.js": "/the-perfect-shop/precache-manifest.e5aa56d9d2545865963809bc5075840d.js",
+    "precache-manifest.eb1f3c98b7309a654043ff7512e9506b.js": "/the-perfect-shop/precache-manifest.eb1f3c98b7309a654043ff7512e9506b.js",
     "service-worker.js": "/the-perfect-shop/service-worker.js",
     "static/css/2.ef1efacd.chunk.css.map": "/the-perfect-shop/static/css/2.ef1efacd.chunk.css.map",
     "static/css/main.ab3c6824.chunk.css.map": "/the-perfect-shop/static/css/main.ab3c6824.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.ef1efacd.chunk.css",
     "static/js/2.7d01282f.chunk.js",
     "static/css/main.ab3c6824.chunk.css",
-    "static/js/main.9fc8de51.chunk.js"
+    "static/js/main.8fa4d6bd.chunk.js"
   ]
 }
