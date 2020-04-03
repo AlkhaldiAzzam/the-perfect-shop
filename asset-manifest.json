@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab3c6824.chunk.css",
-    "main.js": "/static/js/main.ef2f98aa.chunk.js",
-    "main.js.map": "/static/js/main.ef2f98aa.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.3e3d0a56.js",
-    "runtime-main.js.map": "/static/js/runtime-main.3e3d0a56.js.map",
-    "static/css/2.ef1efacd.chunk.css": "/static/css/2.ef1efacd.chunk.css",
-    "static/js/2.3cab9e28.chunk.js": "/static/js/2.3cab9e28.chunk.js",
-    "static/js/2.3cab9e28.chunk.js.map": "/static/js/2.3cab9e28.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.c7c0e9708f77b944a4f53ffd253aacb1.js": "/precache-manifest.c7c0e9708f77b944a4f53ffd253aacb1.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.ef1efacd.chunk.css.map": "/static/css/2.ef1efacd.chunk.css.map",
-    "static/css/main.ab3c6824.chunk.css.map": "/static/css/main.ab3c6824.chunk.css.map",
-    "static/js/2.3cab9e28.chunk.js.LICENSE.txt": "/static/js/2.3cab9e28.chunk.js.LICENSE.txt"
+    "main.css": "/the-perfect-shop/static/css/main.ab3c6824.chunk.css",
+    "main.js": "/the-perfect-shop/static/js/main.1cea1305.chunk.js",
+    "main.js.map": "/the-perfect-shop/static/js/main.1cea1305.chunk.js.map",
+    "runtime-main.js": "/the-perfect-shop/static/js/runtime-main.a66eb506.js",
+    "runtime-main.js.map": "/the-perfect-shop/static/js/runtime-main.a66eb506.js.map",
+    "static/css/2.ef1efacd.chunk.css": "/the-perfect-shop/static/css/2.ef1efacd.chunk.css",
+    "static/js/2.7d01282f.chunk.js": "/the-perfect-shop/static/js/2.7d01282f.chunk.js",
+    "static/js/2.7d01282f.chunk.js.map": "/the-perfect-shop/static/js/2.7d01282f.chunk.js.map",
+    "index.html": "/the-perfect-shop/index.html",
+    "precache-manifest.f689d484ee8eb2c0e57f8756d51c0850.js": "/the-perfect-shop/precache-manifest.f689d484ee8eb2c0e57f8756d51c0850.js",
+    "service-worker.js": "/the-perfect-shop/service-worker.js",
+    "static/css/2.ef1efacd.chunk.css.map": "/the-perfect-shop/static/css/2.ef1efacd.chunk.css.map",
+    "static/css/main.ab3c6824.chunk.css.map": "/the-perfect-shop/static/css/main.ab3c6824.chunk.css.map",
+    "static/js/2.7d01282f.chunk.js.LICENSE.txt": "/the-perfect-shop/static/js/2.7d01282f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3e3d0a56.js",
+    "static/js/runtime-main.a66eb506.js",
     "static/css/2.ef1efacd.chunk.css",
-    "static/js/2.3cab9e28.chunk.js",
+    "static/js/2.7d01282f.chunk.js",
     "static/css/main.ab3c6824.chunk.css",
-    "static/js/main.ef2f98aa.chunk.js"
+    "static/js/main.1cea1305.chunk.js"
   ]
 }
