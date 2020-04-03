@@ -30,7 +30,7 @@ export default class Item extends Component {
         <Paragraph size='medium'>{this.state.desc}</Paragraph>
     </Card.Text>
         <Card.Text>Price: {this.state.price} SR</Card.Text>
-        <Link to={`/item/${this.state.id}`}> <Button
+        <Link to={`/the-perfect-shop/item/${this.state.id}`}> <Button
     icon={<Cart />}
     color='accent-1'
     focusIndicator='false'

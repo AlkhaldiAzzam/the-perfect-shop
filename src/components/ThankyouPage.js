@@ -18,10 +18,10 @@ export default class ThankyouPage extends Component {
                 <Checkmark size="xlarge"/>
                 </div>
 
-                <Link to='/cart'> <Button primary color='accent-1' label="To Cart?"/></Link>
+                <Link to='/the-perfect-shop/cart'> <Button primary color='accent-1' label="To Cart?"/></Link>
 
                 <Box margin='large'>
-                    <Link to='/'><Button primary color='accent-1' label="To Main Page?"/></Link>
+                    <Link to='/the-perfect-shop/'><Button primary color='accent-1' label="To Main Page?"/></Link>
                 </Box>
 
 

@@ -44,13 +44,13 @@ export default class Login extends Component {
       inField={false}
     />
     <Box pad={{ vertical: 'medium' }} align='end'>
-     <Link to='/'> <Button hoverIndicator='background' primary={true} onClick={()=>this.props.signin()} label='Save profile' /></Link>
+     <Link to='/the-perfect-shop/'> <Button hoverIndicator='background' primary={true} onClick={()=>this.props.signin()} label='Save profile' /></Link>
     </Box>
     <Box direction='row' alignSelf='center' gap='small' align='center'>
       <Text>
         {'Don\'t have an account yet?'}
       </Text>
-      <RoutedAnchor path='/signup' label='Sign up' />
+      <RoutedAnchor path='/the-perfect-shop/signup' label='Sign up' />
       </Box>
   </Form>
     </Box>

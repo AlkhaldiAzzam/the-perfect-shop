@@ -92,11 +92,11 @@ renderCon(){
         l = <ul className="navbar-nav">
         
   <li className="nav-item active">
-  <Link className="nav-link" to='/login'><Text color='light'> Log In</Text></Link>  
+  <Link className="nav-link" to='/the-perfect-shop/login'><Text color='light'> Log In</Text></Link>  
   </li>
   <li className="nav-item active">
 
-  <Link className="nav-link" to='/signup'><Text color='light'> Sign Up</Text></Link>  
+  <Link className="nav-link" to='/the-perfect-shop/signub'><Text color='light'> Sign Up</Text></Link>  
   </li>
   </ul>
 
@@ -160,7 +160,7 @@ removeItem(item){
   <div className="collapse navbar-collapse" id="navbarColor01">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
-        <Link className="nav-link" to='/'> <Text size="large"> Home</Text> </Link>
+        <Link className="nav-link" to='/the-perfect-shop/'> <Text size="large"> Home</Text> </Link>
       </li>
       {/* <li className="nav-item">
         <a className="nav-link" href="#">Features</a>
@@ -197,12 +197,12 @@ removeItem(item){
 
 
         <Switch>
-          <Route exact path="/" component={() => <MainPage items={this.state.items} />} />
-          <Route path="/cart" component={()=> <CartPage checkOut={this.checkout} itemRemover={this.removeItem} cart={this.state.cart} />}/>
-          <Route path="/item/:id" render={ props => <ItemPage {...props} addItem={this.addItem} allItems={this.state.items}/>}/>
-          <Route path="/thanks" component={ThankyouPage}/>
-          <Route path="/login" component={()=> <Login signin={this.signin}/>}/>
-          <Route path="/signup" component={()=> <Signup signin={this.signin}/>}/>
+          <Route exact path="/the-perfect-shop/" component={() => <MainPage items={this.state.items} />} />
+          <Route path="/the-perfect-shop/cart" component={()=> <CartPage checkOut={this.checkout} itemRemover={this.removeItem} cart={this.state.cart} />}/>
+          <Route path="/the-perfect-shop/item/:id" render={ props => <ItemPage {...props} addItem={this.addItem} allItems={this.state.items}/>}/>
+          <Route path="/the-perfect-shop/thanks" component={ThankyouPage}/>
+          <Route path="/the-perfect-shop/login" component={()=> <Login signin={this.signin}/>}/>
+          <Route path="/the-perfect-shop/signup" component={()=> <Signup signin={this.signin}/>}/>
 
         </Switch>
 
