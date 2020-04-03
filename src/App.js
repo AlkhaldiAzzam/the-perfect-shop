@@ -197,12 +197,12 @@ removeItem(item){
 
 
         <Switch>
-          <Route exact path='/' component={() => <MainPage items={this.state.items} />} />
-          <Route path='/cart' component={()=> <CartPage checkOut={this.checkout} itemRemover={this.removeItem} cart={this.state.cart} />}/>
-          <Route path="/item/:id" render={ props => <ItemPage {...props} addItem={this.addItem} allItems={this.state.items}/>}/>
-          <Route path="/thanks" component={ThankyouPage}/>
-          <Route path="/login" component={()=> <Login signin={this.signin}/>}/>
-          <Route path="/signup" component={()=> <Signup signin={this.signin}/>}/>
+          <Route exact path="the-pefect-shop/" component={() => <MainPage items={this.state.items} />} />
+          <Route path="the-pefect-shop/cart" component={()=> <CartPage checkOut={this.checkout} itemRemover={this.removeItem} cart={this.state.cart} />}/>
+          <Route path="the-pefect-shop/item/:id" render={ props => <ItemPage {...props} addItem={this.addItem} allItems={this.state.items}/>}/>
+          <Route path="the-pefect-shop/thanks" component={ThankyouPage}/>
+          <Route path="the-pefect-shop/login" component={()=> <Login signin={this.signin}/>}/>
+          <Route path="the-pefect-shop/signup" component={()=> <Signup signin={this.signin}/>}/>
 
         </Switch>
 

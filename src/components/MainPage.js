@@ -38,7 +38,6 @@ filterHandler(e){
                 
 
 <Box margin='large' >
-    <h1>hiii</h1>
     <FormLabel>Filter It</FormLabel>
 
 <InputGroup sice='lg'>
