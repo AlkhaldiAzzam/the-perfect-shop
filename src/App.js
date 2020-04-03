@@ -177,7 +177,7 @@ removeItem(item){
     </ul>
 
     <Anchor size='large' color='brand' reverse  icon={<Stack anchor="top-right">
-          <Link to='/cart'> <Cart size="large" /> </Link>
+          <Link to='/the-perfect-shop/cart'> <Cart size="large" /> </Link>
         <Box
           background="brand"
           pad={{ horizontal: 'xsmall' }}
