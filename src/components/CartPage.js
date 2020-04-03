@@ -34,6 +34,8 @@ export default class CartPage extends Component {
         
 
         let stateCart = this.state.cart
+
+        let total = 0
         
         let table
         if(stateCart.length == 0)
@@ -43,6 +45,7 @@ export default class CartPage extends Component {
                 
                 let cart = []
         stateCart.forEach((i,key) => {
+            total+=i.price * i.quantity
             cart.push(
                 <CartItem key={key} item={i} clickHandler={() => this.props.itemRemover(i)}/>
               )
@@ -69,6 +72,7 @@ export default class CartPage extends Component {
       </TableCell>
 
     </TableRow>
+    
   </TableHeader>
   <TableBody>
 
@@ -76,10 +80,20 @@ export default class CartPage extends Component {
                     cart
                 }
 
+                <TableRow>
+                <TableCell scope="col" border="bottom">
+                <Text textAlign='center' size='large' color='green'>    Total Cost: {total} </Text>
+                </TableCell>
+
+                </TableRow>
+
   </TableBody>
 </Table>
 
+<Box margin='medium'>
+
  <Link to='/the-perfect-shop/thanks'> <Button onClick={()=>this.props.checkOut()} label='Checkout'/></Link>
+</Box>
 </Box>
     }
         return table
