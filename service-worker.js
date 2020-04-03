@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/the-perfect-shop/precache-manifest.2708c151f606f4b935a98aa1e6e6e81e.js"
+  "/the-perfect-shop/precache-manifest.3a24f3375c2501e8397df816737c4282.js"
 );
 
 self.addEventListener('message', (event) => {
