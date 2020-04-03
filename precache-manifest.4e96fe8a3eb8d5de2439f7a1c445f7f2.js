@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "02001192be8a0296812f02dd16374fe6",
+    "revision": "e469037e83ff4817f1f719d46f4e0082",
     "url": "/the-perfect-shop/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-perfect-shop/static/css/2.ef1efacd.chunk.css"
   },
   {
-    "revision": "dd471f81ad1badde22b1",
+    "revision": "d865b3b3e1f550d4ffa1",
     "url": "/the-perfect-shop/static/css/main.ab3c6824.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-perfect-shop/static/js/2.7d01282f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dd471f81ad1badde22b1",
-    "url": "/the-perfect-shop/static/js/main.e7edacff.chunk.js"
+    "revision": "d865b3b3e1f550d4ffa1",
+    "url": "/the-perfect-shop/static/js/main.3088b915.chunk.js"
   },
   {
     "revision": "3f22a0e4f5016d6c8cd6",
