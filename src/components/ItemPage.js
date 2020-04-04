@@ -87,7 +87,7 @@ export default class ItemPage extends Component {
                     <input onChange={(e)=>this.handleChange(e)} type="number" value={this.state.quantity}/>
 
                 <Box width='medium' margin="medium"> 
-                <Link to='/the-perfect-shop/thanks'>
+                <Link to='/thanks'>
 
 
                     <Button

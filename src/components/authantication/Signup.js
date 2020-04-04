@@ -46,13 +46,13 @@ export default class Signup extends Component {
       validation={[validators.required(), validators.True('Please accept our TOS')]}
     />
     <Box pad={{ vertical: 'medium' }} align='end'>
-      <Link to='/the-perfect-shop/'> <Button hoverIndicator='background' primary={true} onClick={()=>this.props.signin()} label='Save profile' /></Link>
+      <Link to='/'> <Button hoverIndicator='background' primary={true} onClick={()=>this.props.signin()} label='Save profile' /></Link>
     </Box>
     <Box direction='row' alignSelf='center' gap='small' align='center'>
       <Text>
         {'Already have an account?'}
       </Text>
-      <RoutedAnchor path='/the-perfect-shop/login' label='Sign in' />
+      <RoutedAnchor path='/login' label='Sign in' />
     </Box>
   </Form>
                 </Box>

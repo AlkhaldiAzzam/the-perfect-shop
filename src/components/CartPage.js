@@ -92,7 +92,7 @@ export default class CartPage extends Component {
 
 <Box margin='medium'>
 
- <Link to='/the-perfect-shop/thanks'> <Button onClick={()=>this.props.checkOut()} label='Checkout'/></Link>
+ <Link to='/thanks'> <Button onClick={()=>this.props.checkOut()} label='Checkout'/></Link>
 </Box>
 </Box>
     }
@@ -128,7 +128,7 @@ export default class CartPage extends Component {
 
 
             {/* <Box margin='large'> */}
-                <Link className='my-5' to='/the-perfect-shop/'> <Button label='Back To Main Page' /> </Link>
+                <Link className='my-5' to='/'> <Button label='Back To Main Page' /> </Link>
             {/* </Box> */}
 
             </Box>
